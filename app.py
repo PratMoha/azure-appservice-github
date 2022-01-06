@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     
-    data = '{ "name":"Jonas", "age":30, "city":"New York"}'
+    data = '{ "name":"Jonass", "age":30, "city":"New York"}'
     y = json.loads(data)
     print (y)
     return y
@@ -18,3 +18,4 @@ def index():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
+
