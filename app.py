@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     
-    data = '{ "name":"John", "age":30, "city":"New York"}'
+    data = '{ "name":"Jonas", "age":30, "city":"New York"}'
     y = json.loads(data)
     print (y)
     return y
