@@ -1,6 +1,3 @@
-from flask import Flask, render_template, url_for
-from azure.identity import DefaultAzureCredential
-from azure.storage.filedatalake import DataLakeServiceClient
 import json
 import csv
 import pandas as pd
@@ -10,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     
-    data = '{ "name":"Jonass", "age":30, "city":"New York"}'
+    data = '{ "name":"Jonath", "age":30, "city":"New York"}'
     y = json.loads(data)
     print (y)
     return y
