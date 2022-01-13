@@ -1,8 +1,5 @@
 from flask import Flask
-from azure.storage.filedatalake import DataLakeServiceClient
 import json
-import csv
-import pandas as pd
 app = Flask(__name__)
 
 
