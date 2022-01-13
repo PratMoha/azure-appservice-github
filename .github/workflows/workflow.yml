@@ -33,7 +33,7 @@ jobs:
     - uses: azure/appservice-settings@v1
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        app-settings-json: 
+        app-settings-json: |
          [
              {
                  "name": "TEST_STRING",
